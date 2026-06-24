@@ -11,8 +11,9 @@ for(let contador = 0; contador <10; contador++){
     if(codigo[contador] === busca){
         console.log(`Código encontrado na ${contador}° posição`);
         encontrado = true
+        break;
     }
 }
-else if(encontrado === false){
+if(encontrado === false){
         console.log(`Código não encontrado`);
     }
